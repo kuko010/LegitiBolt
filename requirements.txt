@@ -1,3 +1,5 @@
 https://github.com/mcbeet/beet/releases/download/v0.114.1/beet-0.114.1-py3-none-any.whl
 https://github.com/mcbeet/beet/releases/download/mecha-v0.102.3/mecha-0.102.3-py3-none-any.whl
 https://github.com/mcbeet/beet/releases/download/bolt-v0.50.1/bolt-0.50.1-py3-none-any.whl
+send2trash
+mcbookshelf
