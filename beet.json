@@ -3,7 +3,9 @@
     "description": "",
     "require": [
         "bolt",
-        "bookshelf.module.raycast"
+        "bookshelf.module.raycast",
+        "bolt_expressions",
+        "bookshelf.module.math"
     ],
     "data_pack": {
         "load": ["src"]

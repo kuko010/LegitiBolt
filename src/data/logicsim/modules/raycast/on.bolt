@@ -1,0 +1,9 @@
+from bolt_expressions import Scoreboard, Data
+
+# Option 3 — the on_hit callback is just a normal bolt function
+function logicsim:raycast/on_hit:
+    tellraw @a [
+        {"text":"Hit X: "},{"score":{"name":"@s","objective":"bs.out.0"}},
+        {"text":" Y: "},{"score":{"name":"@s","objective":"bs.out.1"}},
+        {"text":" Z: "},{"score":{"name":"@s","objective":"bs.out.2"}}
+    ]

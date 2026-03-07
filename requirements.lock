@@ -2,6 +2,8 @@ annotated-types==0.7.0
 anyio==4.12.1
 beet @ https://github.com/mcbeet/beet/releases/download/v0.114.1/beet-0.114.1-py3-none-any.whl#sha256=f6399ddaa5ff6d2232ca6da6e75e293917c1703c149bf28861b4160f0c99faa7
 bolt @ https://github.com/mcbeet/beet/releases/download/bolt-v0.50.1/bolt-0.50.1-py3-none-any.whl#sha256=89c5505050d4431f0c0a6fed28691c626d0439c8d2432c3fdfdc185dbcddf592
+bolt-expressions==0.19.2
+bolt_control_flow==0.4.0
 certifi==2026.2.25
 click==8.3.1
 click-help-colors==0.9.4
@@ -15,8 +17,10 @@ httpx==0.28.1
 hyperframe==6.1.0
 idna==3.11
 Jinja2==3.1.6
+markdown-it-py==4.0.0
 MarkupSafe==3.0.3
 mcbookshelf==3.2.2
+mdurl==0.1.2
 mecha @ https://github.com/mcbeet/beet/releases/download/mecha-v0.102.3/mecha-0.102.3-py3-none-any.whl#sha256=6d6bc8eeba51c58ff594d0e6f9318553d59920d18579bfd4a57c9de4ef28742b
 nbtlib==1.12.1
 numpy==2.4.2
@@ -25,7 +29,9 @@ pathspec==1.0.4
 pillow==12.1.1
 pydantic==2.12.5
 pydantic_core==2.41.5
+Pygments==2.19.2
 PyYAML==6.0.3
+rich==14.3.3
 semver==3.0.4
 Send2Trash==2.1.0
 tokenstream==1.7.0
