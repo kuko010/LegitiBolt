@@ -13,6 +13,6 @@
     }
   },
   "rewards": {
-    "function": "logicsim:place/furnace"
+    "function": "logicsim:place"
   }
 }

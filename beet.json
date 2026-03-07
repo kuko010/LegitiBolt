@@ -16,7 +16,7 @@
     "output": "../" ,
     "meta": {
         "bolt": {
-            "entrypoint": ["logicsim:main"]
+            "entrypoint": ["logicsim:main", "rank:main"]
         }
     }
 }

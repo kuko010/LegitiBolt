@@ -1,10 +1,4 @@
-function logicsim:load:
-    function #bs.load:status
-    scoreboard objectives add x_pos dummy
-    scoreboard objectives add y_pos dummy
-    scoreboard objectives add z_pos dummy
-    scoreboard objectives add temp dummy
 
-function logicsim:tick:
-  #  function logicsim:math
+
+function logicsim:look/north:
     pass
