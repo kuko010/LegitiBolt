@@ -2,6 +2,11 @@ from pathlib import Path
 import shutil
 from send2trash import send2trash
 import subprocess
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--merge", action="store_true")
+args = parser.parse_args()
 
 def move_item(src, dst):
     src_path = Path(src)
@@ -10,7 +15,7 @@ def move_item(src, dst):
 
     target = dst_path / src_path.name
     if target.exists():
-        send2trash(str(target))  # handles both files and folders
+        send2trash(str(target))
 
     shutil.move(str(src_path), str(dst_path))
 
@@ -34,12 +39,13 @@ try:
 except Exception as e:
     print(f"Build failed: {e}")
 finally:
-    # Always restore files, regardless of build outcome
     for item in items:
         move_item(f"../temp/{item}", "../legitieverything_data_pack")
     shutil.rmtree("../temp")
 
-# Only runs if build succeeded (no exception was raised)
 subprocess.run(["git", "add", "."], cwd=cwd, check=True)
 subprocess.run(["git", "commit", "-m", "build"], cwd=cwd)
 subprocess.run(["git", "push"], cwd=cwd, check=True)
+
+if args.merge:
+    subprocess.run("merged", cwd="../", shell=True)

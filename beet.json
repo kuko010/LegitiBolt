@@ -11,5 +11,10 @@
     "pipeline": [
         "mecha"
     ],
-    "output": "../" 
+    "output": "../" ,
+    "meta": {
+        "bolt": {
+            "entrypoint": ["logicsim:main"]
+        }
+    }
 }
